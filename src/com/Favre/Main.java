@@ -15,16 +15,20 @@ public class Main {
         player.chooseWeapon();
         player.chooseLocation();
 
-        System.out.println("type a number...");
-        String num = scanner.nextLine();
-        int numInt = Integer.valueOf(num);
+        player.fintItem("armor");
+        player.fintItem("potion");
 
-        if (numInt < 0) {
-            System.out.println("That's a negative number.");
-        }
-        else{
-            System.out.println("That's a positive number.");
-        }
 
     }
+
+//        System.out.println("type a number...");
+//        String num = scanner.nextLine();
+//        int numInt = Integer.valueOf(num);
+//
+//        if (numInt < 0) {
+//            System.out.println("That's a negative number.");
+//        } else {
+//            System.out.println("That's a positive number.");
+//        }
+
 }
