@@ -15,7 +15,7 @@ public class Player {
         System.out.println("What is your name?");
 
         name = Main.nextLine();
-        System.out.println("Welcome, " + name);
+        System.out.printf("Welcome, %s\n", name);
 
     }
 
@@ -50,11 +50,11 @@ public class Player {
     }
 
     public void fintItem(String item) {
-        System.out.println("You found " + item + "! Pick it up? [Y/N]");
+        System.out.printf("You found  %s! Pick it up? [Y/N]\n", item);
         String answer = Main.nextLine();
         if (answer.equalsIgnoreCase("Y")) {
             items.add(item);
-            System.out.println("You now have " + items.size() + " items");
+            System.out.printf("You now have %s items\n", items.size());
         }
     }
 }
