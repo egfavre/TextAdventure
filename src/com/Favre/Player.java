@@ -5,11 +5,16 @@ import java.util.ArrayList;
 /**
  * Created by user on 5/18/16.
  */
-public class Player {
-    String name;
+public class Player extends Character{
     String weapon;
     String location;
     ArrayList<String> items = new ArrayList<>();
+
+    public Player() {
+        //set player default values
+        this.health = 20;
+        this.damage = 20;
+    }
 
     public void chooseName() {
         System.out.println("What is your name?");

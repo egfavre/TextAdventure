@@ -19,6 +19,9 @@ public class Main {
         player.fintItem("armor");
         player.fintItem("potion");
 
+        Enemy ogre = new Enemy("Ogre", 10, 10);
+        player.battle(ogre);
+
 
     }
 
