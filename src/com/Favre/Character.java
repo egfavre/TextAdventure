@@ -29,6 +29,8 @@ public class Character {
         }
         if (enemy.health <= 0){
             System.out.printf("%s has died.\n", enemy.name);
+        }
     }
-}
+
+
 }
